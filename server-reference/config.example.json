@@ -1,0 +1,12 @@
+{
+  "enabled": false,
+  "model": "deepseek-flash",
+  "verified_model": "deepseek-flash",
+  "price_verified_on": "2026-10-16",
+  "price_expires_on": "2026-11-15",
+  "input_cny_per_million": 2,
+  "output_cny_per_million": 8,
+  "daily_micro_cny": 10000000,
+  "provider_url": "https://api.deepseek.com/chat/completions",
+  "allowed_origins": ["https://play.yyxeach.xyz", "null"]
+}

@@ -1,0 +1,41 @@
+/* Final release adaptations; existing visual identity remains in the base styles. */
+html{scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right);padding-bottom:env(safe-area-inset-bottom)}
+button,a,input,textarea,select{touch-action:manipulation}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #477da7;outline-offset:2px}
+input,textarea,select{max-width:100%;font-size:16px}
+button{overflow-wrap:anywhere}
+dialog{max-height:calc(100dvh - 32px);max-width:calc(100vw - 24px);overflow:auto}
+.save-problem{position:fixed;inset:12px 12px auto;z-index:10000;padding:18px;background:#fff9e8;color:#332c20;border:2px solid #a77d2c;border-radius:12px;box-shadow:0 8px 30px #0004}
+.save-problem button{min-height:44px;margin:6px;padding:10px}
+.grid-board,.grid-foot{grid-template-columns:20px repeat(8,minmax(0,1fr)) 20px!important}
+.grid-cell{min-width:0!important;touch-action:manipulation}
+.grid-board-column,.grid-panel,.grid-workspace{min-width:0}
+.quiz-options button{min-height:52px;text-align:left;line-height:1.65;white-space:normal}
+.post-body p,.source-paper p,.essay-preview p{font-size:var(--reading-size,18px)}
+@media(max-width:700px){
+ .computer-bar{gap:6px;padding:6px 8px;flex-wrap:wrap}
+ .computer-bar .address{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .computer-bar button,.computer-bar summary{min-height:44px}
+ .grid-puzzle{padding:14px 6px;margin-bottom:24px;border-radius:12px}
+ .grid-workspace{display:flex;flex-direction:column;gap:16px}
+ .grid-board-column,.grid-panel{width:100%}
+ .grid-board{padding:8px 2px!important;gap:1px!important}
+ .grid-foot{padding:4px 2px!important;gap:1px!important}
+ .grid-cell{height:auto!important;aspect-ratio:1;min-height:0!important;padding:0!important}
+ .grid-title{font-size:25px}.grid-sub{font-size:14px;line-height:1.7}
+ .grid-tools,.grid-actions{gap:8px}.grid-tools button,.grid-actions button{min-height:48px;padding:8px 4px}
+ .grid-instructions,.grid-message,.grid-solved{font-size:14px;line-height:1.8}
+ .puzzle-overlay{padding:0!important}.doudou-signin{padding:18px 8px}
+ .recovered-password{padding:12px}.recovered-password strong{font-size:30px;letter-spacing:3px}
+ .account-login{margin:32px auto;padding:20px 12px}
+ .account-login h1{font-size:28px;margin-bottom:24px}
+ .source-paper{overflow-wrap:anywhere}
+ .brother-conversation.quiz{padding:16px 12px}
+ .quiz-options{display:flex;flex-direction:column;gap:10px}
+ .source-zoom-dialog #rz-modal-body{overflow:auto}
+}
+@media(max-height:480px) and (orientation:landscape){
+ .account-login{margin:16px auto}.doudou-signin{padding-top:12px}
+ .doudou-signin>h1{margin:0 auto 12px}
+}

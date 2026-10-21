@@ -1,0 +1,17 @@
+{
+  "name": "renzengzaici",
+  "version": "1.0.0",
+  "private": true,
+  "description": "人曾在此 · 离线叙事调查游戏",
+  "scripts": {
+    "build": "node tools/build.cjs",
+    "test": "node --test tests/*.test.cjs",
+    "test:browser": "node tests/browser.cjs",
+    "test:ui": "node tests/responsive.cjs",
+    "test:release": "node tests/release-browser.cjs",
+    "verify": "node tools/verify.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2"
+  }
+}

@@ -1,0 +1,16 @@
+<style>
+body.offline-starting>.computer-bar,body.offline-starting>.skip,body.offline-starting>#rz-main,body.offline-starting>#rz-message{display:none}
+#offline-startup{box-sizing:border-box;max-width:600px;margin:36px auto;padding:24px;color:#253e54;background:#fff;border:1px solid #c8d9e5;border-radius:14px;font:17px/1.8 system-ui,sans-serif;overflow-wrap:anywhere;text-align:left}#offline-startup h1{font-size:25px;margin:0 0 12px}#offline-startup p{margin:12px 0}#offline-startup ol{padding-left:24px}#offline-startup small{color:#62778a}@media(max-width:640px){#offline-startup{margin:20px 12px;padding:20px}}
+</style>
+<section id="offline-startup" role="status">
+<h1>人曾在此 · 离线版</h1>
+<p id="offline-startup-status">游戏正在准备中。如果一直停在这里，当前应用可能没有运行游戏脚本。</p>
+<p><strong>安卓微信打开方式</strong></p>
+<ol><li>先将收到的 HTML 文件完整下载到手机。</li><li>使用文件菜单中的“用其他应用打开”；或到手机的“文件管理／下载”中找到它。</li><li>选择支持本地 HTML 的浏览器打开。微信聊天里的文件预览可能无法运行游戏。</li></ol>
+<p>若没有浏览器可选，说明当前手机没有提供这种文件关联。可以改用电脑浏览器打开同一文件；仅修改文件名无法解决预览限制。</p>
+<small>这是独立离线游戏，正常启动后无需联网。本提示不会请求任何网络资源。</small>
+<noscript><p><strong>当前环境未启用 JavaScript，因此无法进入游戏。请更换打开应用。</strong></p></noscript>
+</section>
+<script>
+window.addEventListener('error',function(){var n=document.getElementById('offline-startup-status');if(n)n.textContent='游戏脚本未能启动。请确认文件已完整下载，并尝试使用更新版本的浏览器打开。';});
+</script>
